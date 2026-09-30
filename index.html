@@ -27,6 +27,8 @@
   <input type="number" id="numero1" placeholder="Primer número">
   <span>+</span>
   <input type="number" id="numero2" placeholder="Segundo número">
+  <span>+</span>
+  <input type="number" id="numero3" placeholder="Tercer número">
 
   <button onclick="realizarSuma()">Calcular Suma</button>
 
@@ -36,11 +38,13 @@
     function realizarSuma() {
       let texto1 = document.getElementById('numero1').value;
       let texto2 = document.getElementById('numero2').value;
+      let texto3 = document.getElementById('numero3').value;
 
       let num1 = Number(texto1);
       let num2 = Number(texto2);
+      let num3 = Number(texto3);
 
-      let total = num1 + num2;
+      let total = num1 + num2 + num3;
 
       document.getElementById('resultado').textContent = "El resultado es: " + total;
     }
